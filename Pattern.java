@@ -27,19 +27,35 @@ int maxE;
         }
     }
     public static void eo(int maxE){
-        while (maxE>=0){
-            String e = "e";
+        String e = "e";
             String o = "o";
-            System.out.println(e.repeat(maxE+1-maxE));
-            maxE--;
-        }
+            int i = 0;
+    while(i<maxE){
+        i++;
+        System.out.println(e.repeat(i));
+        i++;
+        System.out.println(o.repeat(i));
+     
+    }
+    while (i>0) {
+        i--;
+        System.out.println(e.repeat(i));
+      i--;
+        System.out.println(o.repeat(i));
+       
+
+    }
+}
+    public static void pyramid(int rows){
+
     }
 
         public static void main(String[] args){
             stars(6);
             triangle(5);
             odds(9);
-            eo(6);
+            eo(5);
+            pyramid(6);
         }
 
 
